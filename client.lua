@@ -1,11 +1,14 @@
 local playerAce = false
+local isSpeedSet = false
 
-RegisterNetEvent("synthex:fetchace")
-AddEventHandler("synthex:fetchace", function(boolean)
+-- Client Events
+
+RegisterNetEvent("synthex:fetchace:client")
+AddEventHandler("synthex:fetchace:client", function(boolean)
     playerAce = boolean
 end)
 
-local isSpeedSet = false
+-- Threads
 
 Citizen.CreateThread(function()
     while true do
@@ -36,6 +39,8 @@ Citizen.CreateThread(function()
         end
     end
 end)
+
+-- Functions
 
 function setSpeed(vehicle)
     local vehicleClass = GetVehicleClass(vehicle)
