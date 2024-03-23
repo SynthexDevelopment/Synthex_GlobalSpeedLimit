@@ -40,6 +40,10 @@ Citizen.CreateThread(function()
     end
 end)
 
+Citizen.CreateThread(function()
+    TriggerServerEvent('synthex:fetchace:server)
+end)
+
 -- Functions
 
 function setSpeed(vehicle)
