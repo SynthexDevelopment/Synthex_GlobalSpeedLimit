@@ -3,7 +3,7 @@ fx_version 'cerulean'
 
 name 'Global Speed Limit'
 description 'resource_description'
-author 'Andy'
+author 'Jax Development'
 lua54 'yes'
 
 shared_scripts {
