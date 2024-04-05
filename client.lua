@@ -3,8 +3,8 @@ local isSpeedSet = false
 
 -- Client Events
 
-RegisterNetEvent("synthex:fetchace:client")
-AddEventHandler("synthex:fetchace:client", function(boolean)
+RegisterNetEvent("jax:fetchace:client")
+AddEventHandler("jax:fetchace:client", function(boolean)
     playerAce = boolean
 end)
 
@@ -41,7 +41,7 @@ Citizen.CreateThread(function()
 end)
 
 Citizen.CreateThread(function()
-    TriggerServerEvent('synthex:fetchace:server)
+    TriggerServerEvent('jax:fetchace:server)
 end)
 
 -- Functions
