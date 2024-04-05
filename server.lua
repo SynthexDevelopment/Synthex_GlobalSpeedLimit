@@ -1,9 +1,9 @@
-RegisterNetEvent("synthex:checkace:server")
-AddEventHandler("synthex:checkace:server", function()
+RegisterNetEvent("jax:checkace:server")
+AddEventHandler("jax:checkace:server", function()
     local source = source
     if IsPlayerAceAllowed(source, Config.aceperm) then
-        TriggerClientEvent("synthex:fetchace:client", source, true)
+        TriggerClientEvent("jax:fetchace:client", source, true)
     else 
-        TriggerClientEvent("synthex:fetchace:client", source, false)
+        TriggerClientEvent("jax:fetchace:client", source, false)
     end 
 end)
